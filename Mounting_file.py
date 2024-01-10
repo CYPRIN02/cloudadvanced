@@ -10,6 +10,7 @@ extra_configs = {"fs.azure.account.key.grp7.blob.core.windows.net":dbutils.secre
 df_test_clean = spark.read.options(inferSchema='True').csv("/mnt/mount_grp7/data/test_cleaned.csv", header=True)
 df_train_clean = spark.read.options(inferSchema='True').csv("/mnt/mount_grp7/data/train_cleaned.csv", header=True)
 
+
 # COMMAND ----------
 
 #df.head()
